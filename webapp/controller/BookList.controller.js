@@ -15,7 +15,6 @@ sap.ui.define([
         onCheckout(oEvent) {
             var bindingContext = this.byId("idBooksTable").getSelectedContexts()[0];
             var path = bindingContext.getPath();
-            var oModel = oEvent.getSource().getModel();
             var object = bindingContext.getModel().getProperty(path);
                 var isbn = object.ISBN;
                 var checkout = {
